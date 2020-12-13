@@ -41,6 +41,6 @@ function createJWT(user) {
   return jwt.sign(
     { user }, // data payload
     SECRET,
-    { expiresIn: "60d" }
+    { expiresIn: "30d" }
   );
 }
